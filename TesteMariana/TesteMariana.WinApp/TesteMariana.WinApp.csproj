@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D977EB42-B388-4557-9C5D-4843EE76EF0B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TesteMariana.WinApp</RootNamespace>
+    <AssemblyName>TesteMariana.WinApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Funcionalidades\Questoes\CadastroQuestaoDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funcionalidades\Questoes\CadastroQuestaoDialog.Designer.cs">
+      <DependentUpon>CadastroQuestaoDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionalidades\Questoes\QuestaoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcionalidades\Questoes\QuestaoControl.Designer.cs">
+      <DependentUpon>QuestaoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionalidades\Questoes\QuestaoGerenciadorFormulario.cs" />
+    <Compile Include="Funcionalidades\Materia\CadastroMateriaDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funcionalidades\Materia\CadastroMateriaDialog.Designer.cs">
+      <DependentUpon>CadastroMateriaDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionalidades\Materia\MateriaControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcionalidades\Materia\MateriaControl.Designer.cs">
+      <DependentUpon>MateriaControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionalidades\Materia\MateriaGerenciadorFormulario.cs" />
+    <Compile Include="Funcionalidades\Serie\CadastroSerieDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funcionalidades\Serie\CadastroSerieDialog.Designer.cs">
+      <DependentUpon>CadastroSerieDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionalidades\Serie\SerieControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcionalidades\Serie\SerieControl.Designer.cs">
+      <DependentUpon>SerieControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionalidades\Serie\SerieGerenciadorFormulario.cs" />
+    <Compile Include="Funcionalidades\Disciplinas\CadastroDisciplinaDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funcionalidades\Disciplinas\CadastroDisciplinaDialog.Designer.cs">
+      <DependentUpon>CadastroDisciplinaDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionalidades\Disciplinas\DisciplinaControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Funcionalidades\Disciplinas\DisciplinaControl.Designer.cs">
+      <DependentUpon>DisciplinaControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionalidades\Disciplinas\DisciplinaGerenciadorFormulario.cs" />
+    <Compile Include="Funcionalidades\GerenciadorFormulario.cs" />
+    <Compile Include="Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.cs">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Funcionalidades\Questoes\CadastroQuestaoDialog.resx">
+      <DependentUpon>CadastroQuestaoDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionalidades\Questoes\QuestaoControl.resx">
+      <DependentUpon>QuestaoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionalidades\Materia\CadastroMateriaDialog.resx">
+      <DependentUpon>CadastroMateriaDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionalidades\Materia\MateriaControl.resx">
+      <DependentUpon>MateriaControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionalidades\Serie\CadastroSerieDialog.resx">
+      <DependentUpon>CadastroSerieDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionalidades\Serie\SerieControl.resx">
+      <DependentUpon>SerieControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionalidades\Disciplinas\CadastroDisciplinaDialog.resx">
+      <DependentUpon>CadastroDisciplinaDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionalidades\Disciplinas\DisciplinaControl.resx">
+      <DependentUpon>DisciplinaControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <DependentUpon>Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Symbol Pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TesteMariana.Aplicacao\TesteMariana.Aplicacao.csproj">
+      <Project>{B7B68E5E-90B5-4E27-B6D2-963161973B40}</Project>
+      <Name>TesteMariana.Aplicacao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TesteMariana.Dominio\TesteMariana.Dominio.csproj">
+      <Project>{5D0EC705-24B1-40D5-BEEF-F8397968E53E}</Project>
+      <Name>TesteMariana.Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TesteMariana.Infra.Data\TesteMariana.Infra.Data.csproj">
+      <Project>{C919CD48-DD98-414E-BFEA-10D0523E4C2B}</Project>
+      <Name>TesteMariana.Infra.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
